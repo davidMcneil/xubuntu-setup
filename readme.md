@@ -21,6 +21,10 @@ The workspace switcher shows a preview of all the workspaces and the current wor
 
 ![](images/workspace_switcher.png)
 
+Disable workspace wraping.
+
+![](images/disable_workspace_wrap.png)
+
 ### Set Window Keyboard Shortcuts
 Setup move windows to workspace and snapping windows keyboard shortcuts.
 ![](images/window_keyboard_shortcuts.png)
@@ -40,6 +44,15 @@ Right click on the date time and select Properties.
 
 ### Allow Reordering of Tabs in Panel
 ![](images/window_tab_reordering.png)
+
+### Custom Actions
+Create custom actions for files or folders in file explorer.
+
+![](images/file_explorer_custom_actions.png)
+
+Add Sublime Text option.
+
+![](images/sublime_custom_action.png)
 
 ### Use Nvidia Graphics Card Driver
 ![](images/nvidia_driver.png)
