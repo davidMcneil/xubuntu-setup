@@ -77,6 +77,10 @@ Add the following lines to the .bashrc file
 
 >\> git config --global user.email johndoe@example.com
 
+>\> git config --global diff.tool meld
+
+>\> git config --global merge.tool meld
+
 * Aliases
 
 >\> git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -87,6 +91,8 @@ Download [deb package](https://www.sublimetext.com/3).
 
 ### Installed Packages
 * [Package Control](https://packagecontrol.io/installation)
+* Rust
+* RustAutoComplete
 
 ### User Settings Additions
 Keep from reloading last session:
@@ -97,7 +103,25 @@ Keep from reloading last session:
 ## Other Software
 
 * Keepassx - password manager
+
 >\> sudo apt install keepassx
 
 * ReText - markdown editor
+
 >\> sudo apt install retext
+
+* Meld - diff tool
+
+>\> sudo apt install meld
+
+* Rust - Programming language
+
+>\> curl -sf -L https://static.rust-lang.org/rustup.sh | sh
+
+>\> cargo install racer # Rust autocomplete
+
+* Other
+
+>\> sudo apt install curl
+
+>\> sudo apt install libssl-dev
