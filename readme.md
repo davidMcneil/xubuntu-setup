@@ -1,10 +1,10 @@
 # Xubuntu 16.04 Setup
 
-This guide describes how I setup [Xubuntu](http://xubuntu.org/). The guide is primarily for me to remember what I did in case I should have to do it again. However, others may find it useful as well. The guide is more of a series of prompts and less of a step my step explanation.
+This guide describes how I setup [Xubuntu](http://xubuntu.org/). The guide is primarily for me to remember what I did in case I should have to do it again. However, others may find it useful as well. The guide is more of a series of prompts and less of a step my step explanation. Some of the images are hard to read, but the original images are available in the 'original_images' directory.
 
 ## Setup XFCE
 
-[XFCE](http://www.xfce.org/) is Xubuntu desktop environment. Personally, there are a few tweaks that I think make Xubuntu easier to work in.
+[Xfce](http://www.xfce.org/) is Xubuntu's desktop environment. Personally, there are a few tweaks that I think make Xubuntu easier to work in.
 
 ### Move Panel
 Right click on the panel, select panel preferences, and deselect 'Lock Panel'. Grab the handle on the side of the panel and drag it to the bottom. The panel can then be relocked.
@@ -12,12 +12,12 @@ Right click on the panel, select panel preferences, and deselect 'Lock Panel'. G
 ![](images/move_panel.png)
 
 ### Set Keyboard Shortcut of Whiskermenu
-Make the application selector start with Super+Space. The application selector allows applications to be searched and then run by hitting enter.
+Make the application selector start with Super+Space. The application selector allows applications to be searched and then run by hitting enter. Many of the configuration menus shown in subsequent images can be reached by searching for the window title with this tool.
 
 ![](images/whiskermenu_shortcut.png)
 
 ### Add Workspace Switcher to Panel
-The workspace switcher shows a preview of all the workspaces and the current workspace. One can edit the workspace configuration by right clicking on the workspace switcher and selecting Properties.
+The workspace switcher shows a preview of all the workspaces and the current workspace. Items can be added to the panel by right clicking on it and then selection 'Panel -> Add New Items...'. One can edit the workspace configuration by right clicking on the workspace switcher and selecting Properties.
 
 ![](images/workspace_switcher.png)
 
@@ -35,7 +35,7 @@ Deselect the items to be removed.
 ![](images/desktop_icons.png)
 
 ### Set Date Time Format
-Right click on the date time and select Properties.
+Right click on the date time and select Properties. Use the custom format '%b %d %I:%M %p'.
 
 ![](images/clock_format.png)
 
@@ -141,10 +141,16 @@ Keep from reloading last session:
 
 >\> sudo apt install texmaker
 
+* A US Dictionary - set the dictionary option in texmaker to '/usr/share/hunspell/en_US.dic'
+
+>\> sudo apt install myspell-en-us
+
+* Sound Converter- tool for converting to audio files
+
+>\> sudo apt install soundconverter
+
 * Other
 
 >\> sudo apt install curl
 
 >\> sudo apt install libssl-dev
-
->\> sudo apt-get install myspell-en-us
