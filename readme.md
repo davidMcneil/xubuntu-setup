@@ -127,14 +127,24 @@ Keep from reloading last session:
 
 >\> sudo apt install meld
 
-* Rust - Programming language
+* Rust - programming language
 
 >\> curl -sf -L https://static.rust-lang.org/rustup.sh | sh
 
 >\> cargo install racer # Rust autocomplete
+
+* Calibre - ebook client
+
+>\> sudo apt install calibre
+
+* TexMaker - latex tool
+
+>\> sudo apt install texmaker
 
 * Other
 
 >\> sudo apt install curl
 
 >\> sudo apt install libssl-dev
+
+>\> sudo apt-get install myspell-en-us
