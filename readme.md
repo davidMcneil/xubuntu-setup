@@ -119,6 +119,17 @@ Keep from reloading last session:
 
 >\> sudo apt install keepassx
 
+* Chromium - web browser
+
+>\> sudo apt install chromium-browser
+
+* [Vivaldi](https://vivaldi.com/download/?lang=en_US) - web browser
+    * Double click on .deb package to open and select install
+
+* [Virtual Box](https://www.virtualbox.org/wiki/Linux_Downloads) - VM manager
+    * Double click on .deb package to open and select install
+    * [Free Windows VMs](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
+
 * ReText - markdown editor
 
 >\> sudo apt install retext
