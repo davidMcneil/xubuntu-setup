@@ -161,8 +161,14 @@ Keep from reloading last session:
 
 >\> sudo apt install soundconverter
 
+* Pip - python package manager
+
+>\> sudo apt install python-pip
+
 * Other
 
 >\> sudo apt install curl
 
 >\> sudo apt install libssl-dev
+
+>\> sudo apt install gddrescue
