@@ -170,6 +170,16 @@ Keep from reloading last session:
 
 >\> sudo apt install python-pip
 
+* Docker - container manager
+
+>\> sudo apt install docker.io
+
+>\> sudo service docker start
+
+>\> sudo groupadd docker
+
+>\> sudo usermod -aG docker USERNAME
+
 * Other
 
 >\> sudo apt install curl
