@@ -78,6 +78,11 @@ Add the following lines to the .bashrc file
 * Change terminal prompt
 
     PS1="\\[\\033[01;34m\\] \\w \\[\\033[01;32m\\]> \\[\\033[00m\\]"
+    
+## Automount a Drive
+>\> sudo blkid # to get uuid of drive
+
+Edit '/etc/fstab' with a new entry and the desired uuid.
 
 ## Git
 * Install
@@ -172,3 +177,5 @@ Keep from reloading last session:
 >\> sudo apt install libssl-dev
 
 >\> sudo apt install gddrescue
+
+>\> sudo apt install nmap
