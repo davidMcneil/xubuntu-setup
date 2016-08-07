@@ -180,6 +180,14 @@ Keep from reloading last session:
 
 >\> sudo usermod -aG docker USERNAME
 
+* Dolphin - Gamecube and Wii emulator
+
+>\> sudo apt install dolphin-emu
+
+* Dosbox - DOS emulator
+
+>\> sudo apt install dosbox
+
 * Other
 
 >\> sudo apt install curl
