@@ -128,8 +128,13 @@ Keep from reloading last session:
 
 >\> sudo apt install chromium-browser
 
+* [Chrome](https://www.google.com/chrome/browser/desktop/#) - web browser
+
+>\> sudo dpkg -i DEB_PACKAGE
+
 * [Vivaldi](https://vivaldi.com/download/?lang=en_US) - web browser
-    * Double click on .deb package to open and select install
+
+>\> sudo dpkg -i DEB_PACKAGE
 
 * Virtual Box - Virtual machine manager
     * [Free Windows VMs](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
