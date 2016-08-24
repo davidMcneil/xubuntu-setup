@@ -111,6 +111,9 @@ Download [deb package](https://www.sublimetext.com/3).
 * [Package Control](https://packagecontrol.io/installation)
 * Rust
 * RustAutoComplete
+* SublimeLinter
+* SublimeLinter-contrib-eslint
+* TrailingSpaces
 
 ### User Settings Additions
 Keep from reloading last session:
