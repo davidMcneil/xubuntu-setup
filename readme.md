@@ -124,6 +124,13 @@ Keep from reloading last session:
 
 >\> sudo apt install keepassx
 
+
+* node.js and npm
+
+>\> sudo apt install npm
+
+>\> sudo apt install nodejs-legacy
+
 * Chromium - web browser
 
 >\> sudo apt install chromium-browser
@@ -184,6 +191,18 @@ Keep from reloading last session:
 >\> sudo groupadd docker
 
 >\> sudo usermod -aG docker USERNAME
+
+* Oracle Java8 - 
+
+>\> sudo add-apt-repository ppa:webupd8team/java
+
+>\> sudo apt update
+
+>\> sudo apt install oracle-java8-installer
+
+* PCSX2 - PS2 emulator
+
+>\> sudo apt install pcsx2
 
 * Dolphin - Gamecube and Wii emulator
 
