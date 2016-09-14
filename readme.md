@@ -147,6 +147,9 @@ Keep from reloading last session:
 >\> sudo dpkg -i DEB_PACKAGE
 
 * Virtual Box - Virtual machine manager
+    
+    >\> sudo usermod -aG vboxusers USERNAME
+    
     * [Free Windows VMs](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
 
 >\> sudo apt install virtualbox
