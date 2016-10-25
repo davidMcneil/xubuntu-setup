@@ -3,7 +3,6 @@
 This guide describes how I setup [Xubuntu](http://xubuntu.org/). The guide is primarily for me to remember what I did in case I should have to do it again. However, others may find it useful as well. The guide is more of a series of prompts and less of a step my step explanation. Some of the images are hard to read, but the original images are available in the 'original_images' directory.
 
 ## Setup XFCE
-
 [Xfce](http://www.xfce.org/) is Xubuntu's desktop environment. Personally, there are a few tweaks that I think make Xubuntu easier to work in.
 
 ### Move Panel
@@ -78,61 +77,22 @@ Add the following lines to the .bashrc file
 * Change terminal prompt
 
     PS1="\\[\\033[01;34m\\] \\w \\[\\033[01;32m\\]> \\[\\033[00m\\]"
-    
+
 ## Automount a Drive
 >\> sudo blkid # to get uuid of drive
 
 Edit '/etc/fstab' with a new entry and the desired uuid.
 
-## Git
-* Install
+## Installed Software
 
->\> sudo apt install git
+### User Software
+* Gnome System Monitor - the gnome system monitor is significanly better than the one built in to XFCE
 
-* Configure
-
->\> git config --global user.name "John Doe"
-
->\> git config --global user.email johndoe@example.com
-
->\> git config --global diff.tool meld
-
->\> git config --global merge.tool meld
-
-* Aliases
-
->\> git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-
-## Sublime Text 3
-Download [deb package](https://www.sublimetext.com/3).
->\> sudo dpkg -i DEB_PACKAGE
-
-### Installed Packages
-* [Package Control](https://packagecontrol.io/installation)
-* Rust
-* RustAutoComplete
-* SublimeLinter
-* SublimeLinter-contrib-eslint
-* TrailingSpaces
-
-### User Settings Additions
-Keep from reloading last session:
-
-    "hot_exit": false,
-    "remember_open_files": false
-
-## Other Software
+>\> sudo apt install gnome-system-monitor
 
 * Keepassx - password manager
 
 >\> sudo apt install keepassx
-
-
-* node.js and npm
-
->\> sudo apt install npm
-
->\> sudo apt install nodejs-legacy
 
 * Chromium - web browser
 
@@ -146,27 +106,9 @@ Keep from reloading last session:
 
 >\> sudo dpkg -i DEB_PACKAGE
 
-* Virtual Box - Virtual machine manager
-    
-    >\> sudo usermod -aG vboxusers USERNAME
-    
-    * [Free Windows VMs](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
-
->\> sudo apt install virtualbox
-
 * ReText - markdown editor
 
 >\> sudo apt install retext
-
-* Meld - diff tool
-
->\> sudo apt install meld
-
-* Rust - programming language
-
->\> curl -sf -L https://static.rust-lang.org/rustup.sh | sh
-
->\> cargo install racer # Rust autocomplete
 
 * Calibre - ebook client
 
@@ -184,9 +126,60 @@ Keep from reloading last session:
 
 >\> sudo apt install soundconverter
 
+### Developer Tools
+* Git
+    * Install
+
+    >\> sudo apt install git
+
+    * Configure
+
+    >\> git config --global user.name "John Doe"
+
+    >\> git config --global user.email johndoe@example.com
+
+    >\> git config --global diff.tool meld
+
+    >\> git config --global merge.tool meld
+
+    * Aliases
+
+    >\> git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+* Sublime Text 3
+
+    * Download [deb package](https://www.sublimetext.com/3).
+
+    >\> sudo dpkg -i DEB_PACKAGE
+
+    * Packages
+        * [Package Control](https://packagecontrol.io/installation)
+        * Rust
+        * RustAutoComplete
+        * SublimeLinter
+        * SublimeLinter-contrib-eslint
+        * TrailingSpaces
+
+    * User Settings Additions
+        * Keep from reloading last session:
+
+        > "hot_exit": false,
+
+        > "remember_open_files": false
+
+* Virtual Box - Virtual machine manager, [Free Windows VMs](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
+
+>\> sudo usermod -aG vboxusers USERNAME
+
+>\> sudo apt install virtualbox
+
 * Pip - python package manager
 
 >\> sudo apt install python-pip
+
+* Meld - diff tool
+
+>\> sudo apt install meld
 
 * Docker - container manager
 
@@ -198,7 +191,14 @@ Keep from reloading last session:
 
 >\> sudo usermod -aG docker USERNAME
 
-* Oracle Java8 - 
+### Programming Languages
+* Rust - programming language
+
+>\> curl -sf -L https://static.rust-lang.org/rustup.sh | sh
+
+>\> cargo install racer # Rust autocomplete
+
+* Oracle Java8
 
 >\> sudo add-apt-repository ppa:webupd8team/java
 
@@ -206,6 +206,13 @@ Keep from reloading last session:
 
 >\> sudo apt install oracle-java8-installer
 
+* node.js and npm - develop with JavaScript
+
+>\> sudo apt install npm
+
+>\> sudo apt install nodejs-legacy
+
+### Emulators
 * PCSX2 - PS2 emulator
 
 >\> sudo apt install pcsx2
@@ -218,7 +225,9 @@ Keep from reloading last session:
 
 >\> sudo apt install dosbox
 
-* Other
+### Other
+
+>\> sudo apt install checkinstall # Converts software installed with make to packages
 
 >\> sudo apt install curl
 
